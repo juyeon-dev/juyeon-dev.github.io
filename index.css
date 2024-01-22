@@ -10,6 +10,7 @@ ul, ol {
 
 a {
     text-decoration: none;
+    color: black;
 }
 
 @font-face {
@@ -19,14 +20,28 @@ a {
     font-style: normal;
 }
 
-body {
+html, body {
     font-family: 'SUITE-Regular';
+    scroll-behavior: smooth; 
+    width: 100%;
+    min-width: 1000px;
 }
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+
+
 
 nav {
     width: 100%;
     height: 40px;
     line-height: 40px;
+
     background-color: white;
     box-shadow: 0px 0px 40px 0px black;
 
@@ -35,6 +50,8 @@ nav {
     left: 0;
     right: 0;
     margin: 0 auto;
+
+    z-index:2;
 }
 
 .nav-object {
@@ -44,8 +61,15 @@ nav {
     margin-left: 30px;
 }
 
+.nav-object:hover {
+    color: red;
+}
 
-.home {
+
+
+
+
+.about {
     margin-top: 40px;
     width:100%;
     
@@ -55,28 +79,146 @@ nav {
 
     padding: 100px 0px;
 }
-.home::after {
+.about::after {
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
+
     background-image: url(./asset/header.jpg);
     background-size:cover;
+    
     content: "";
-    opacity: 40%;
+    opacity: 30%;
     z-index: -1;
 }
 
-.header-name {
+.about-name {
     font-size: 60px;
     font-weight: 900;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
-.header-desc {
+.about-desc {
     font-size: 25px;
     font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.about-contact {
+    background-color: white;
+    opacity: 85%;
+
+    width: 300px;
+    padding: 10px;
+    border-radius: 20px;
+
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.about-contact-icon {
+    width: 20px;
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: -4px;
+}
+.about-contact-desc {
+    display: inline-block;
+    line-height: 30px;
+    font-weight: 600;
+    font-size: 18px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
-.about {
-    background-color: gray;
+
+.skill {
+    margin: 30px auto;
+    text-align: center;
+    vertical-align: top;
+    width: 1300px;
 }
+
+.skill-cate {
+    height: 100%;
+}
+
+.skill-cate-name {
+    width: 200px;
+    display: inline-block;
+    font-size: 30pt;
+    text-align: left;
+    vertical-align: top;
+    font-weight: 900;
+
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: -10px;
+
+    background: linear-gradient(to right top, #1b6621, #000000);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+.skill-objects {
+    display: inline-block;
+    width: 1000px;
+}
+
+.skill-object {
+    display: inline-block;
+    width: 450px;
+    height: auto;
+    border-radius: 15px;
+    margin: 20px;
+    vertical-align:top;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(245, 245, 245);
+}
+
+.skill-icon {
+    width: 100px;
+    height: 100px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    display: inline-block;
+
+    float: left;
+}
+
+.skill-name {
+    display: inline-block;
+    font-size: 20pt;
+    font-family: Consolas;
+    margin-bottom:5px;
+    font-weight:bold;
+}
+
+.skill-desc {
+    display: inline-block;
+    width:270px;
+    float: right;
+
+    text-align: left;
+    padding: 10px 30px;
+}
+
+.skill-desc-more {
+    text-indent: -10pt;
+    padding: 5px 0;
+}
+
+
+.project {
+    background-color: red;
+}
+
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+  }
