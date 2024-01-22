@@ -6,34 +6,197 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<link rel="stylesheet" href="./index.css" />
+	
+
 	<title>Portfolio</title>
 </head>
 <body>
 	<nav>
-		<div class="nav-object"><a href="#home">Home.</a></div>
-		<div class="nav-object"><a href="#about">About.</a></div>
-		<div class="nav-object">Project.</div>
-		<div class="nav-object">Skill.</div>
+		<a href="#about"><div class="nav-object">About.</div></a>
+		<a href="#skill"><div class="nav-object">Skill.</div></a>
+		<a href="#project"><div class="nav-object">Project.</div></a>
+		<a href="#contact"><div class="nav-object">Contact.</div></a>
 	</nav>
 
-	<a name="home"></a>
-	<div class="home">
-		<div class="header-name">신입 백엔드 개발자</div>
-		<br/>
-		<div class="header-name">김주연의 포트폴리오입니다 :)</div>
-		<br/><br/>
-		<div class="header-desc">일상의 불편함을 찾고, 이를 해결하기 위한 서비스를 개발합니다</div>
-		<br/>
-		<div class="header-desc">사람들에게 더 나은 환경을 제공하기 위해 언제나 한 발 앞서 생각하는 개발자가 되겠습니다</div>
-	</div>
-	
 	<a name="about"></a>
 	<div class="about">
+		<div class="about-name">신입 백엔드 개발자</div>
+		<div class="about-name">김주연의 포트폴리오입니다 :)</div>
+		<br>
+		<div class="about-desc">일상의 불편함을 찾고, 이를 해결하기 위한 서비스를 개발합니다</div>
+		<div class="about-desc">사람들에게 더 나은 환경을 제공하기 위해 언제나 한 발 앞서 생각하는 개발자가 되겠습니다</div>
+		<br>
+		<div class="about-contact">
+			<div class="about-contact-desc"><img class="about-contact-icon" src="./asset/phone-call.png">010-3109-6282</div>
+			<div class="about-contact-desc"><img class="about-contact-icon" src="./asset/mail.png">0510jian@gmail.com</div>
+		</div>
 	</div>
 
+	<a name="skill"></a>
+	<div class="skill">
+		<div class="skill-cate">
+			<div class="helper"></div>
+			<div class="skill-cate-name">백엔드</div>
+			<div class="skill-objects">
+				<div class="skill-object">
+					<div class="skill-icon"><img src="./asset/skill-icon-java.png"></div>
+					<div class="skill-desc">
+						<div class="skill-name">Java</div>
+						<div class="skill-desc-more">
+							- 기본 문법에 따라 코드를 작성할 수 있습니다
+						</div>
+						<div class="skill-desc-more">
+							- OOP의 특징(추상화, 상속, 다형성, 캡슐화)에 대해 이해하고 있습니다
+						</div>
+						<div class="skill-desc-more">
+							- 기능 단위로 함수를 분리하고 이를 재사용할 수 있습니다
+						</div>
+						<div class="skill-desc-more">
+							- 간단한 테스트 코드를 작성할 수 있습니다
+						</div>
+					</div>
+				</div>
+				<div class="skill-object">
+					<div class="skill-icon"><img src="./asset/skill-icon-springboot.png"></div>
+					<div class="skill-desc">
+						<div class="skill-name">Spring Boot</div>
+						<div class="skill-desc-more">
+							- RESTful한 API를 설계할 수 있습니다
+						</div>
+						<div class="skill-desc-more">
+							- 로그인, 회원가입, 게시글의 CRUD를<br>구현할 수 있습니다
+						</div>
+						<div class="skill-desc-more">
+							- 검색, 페이징을 구현할 수 있습니다
+						</div>
+						<div class="skill-desc-more">
+							- MVC 패턴의 동작 방식을 이해하고<br>구현할 수 있습니다
+						</div>
+					</div>
+				</div>
+				<div class="skill-object">
+					<div class="skill-icon"><img src="./asset/skill-icon-mysql.png"></div>
+					<div class="skill-desc">
+						<div class="skill-name">MySQL</div>
+						<div class="skill-desc-more">
+							- 여러 서비스의 ERD를 설계, 첨삭한 경험이 있습니다
+						</div>
+						<div class="skill-desc-more">
+							- MySQL의 기본 문법에 따라 DB를 생성,<br>수정, 삭제할 수 있습니다
+						</div>
+					</div>
+				</div>
+				<div class="skill-object">
+					<div class="skill-icon"><img src="./asset/skill-icon-mybatis.png"></div>
+					<div class="skill-desc">
+						<div class="skill-name">MyBatis</div>
+						<div class="skill-desc-more">
+							- 프로그램 코드와 DB 쿼리를 분리하여<br>효율적으로 관리할 수 있습니다
+						</div>
+						<div class="skill-desc-more">
+							- 다양한 쿼리를 입력하여 DB의 데이터를<br>매핑할 수 있습니다
+						</div>
+					</div>
+				</div>
+				<div class="skill-object">
+					<div class="skill-icon"><img src="./asset/skill-icon-hibernate.png"></div>
+					<div class="skill-desc">
+						<div class="skill-name">Hibernate</div>
+						<div class="skill-desc-more">
+							- 직접 모든 쿼리를 입력하지 않고 findBy, findAll 쿼리를 사용하여 간단하게 데이터를 조회할 수 있습니다.
+						</div>
+					</div>
+				</div>
+				<div class="skill-object" style="visibility: hidden;"></div>
+			</div>
+		</div>
+		<div class="skill-cate">
+			<div class="helper"></div>
+			<div class="skill-cate-name">프론트엔드</div>
+			<div class="skill-objects">
+				<div class="skill-object">
+					<div class="skill-icon"><img src="./asset/skill-icon-html.png"></div>
+					<div class="skill-desc">
+						<div class="skill-name">HTML</div>
+						<div class="skill-desc-more">
+							- 다양한 태그를 사용하여 구조적인<br>페이지 레이아웃을 구현할 수 있습니다
+						</div>
+					</div>
+				</div>
+				<div class="skill-object">
+					<div class="skill-icon"><img src="./asset/skill-icon-css.png"></div>
+					<div class="skill-desc">
+						<div class="skill-name">CSS</div>
+						<div class="skill-desc-more">
+							- 다양한 속성을 사용하여 웹페이지를<br>스타일링 할 수 있습니다
+						</div>
+					</div>
+				</div>
+				<div class="skill-object">
+					<div class="skill-icon"><img src="./asset/skill-icon-javascript.png"></div>
+					<div class="skill-desc">
+						<div class="skill-name">javascript</div>
+						<div class="skill-desc-more">
+							- 기본 문법에 따라 코드를 작성할 수 있습니다
+						</div>
+						<div class="skill-desc-more">
+							- DOM을 사용하여 HTML 요소를 조작할 수 있습니다
+						</div>
+						<div class="skill-desc-more">
+							- 웹페이지 내에 동적인 기능을 구현할 수 있습니다
+						</div>
+					</div>
+				</div>
+				<div class="skill-object">
+					<div class="skill-icon"><img src="./asset/skill-icon-thymeleaf.png"></div>
+					<div class="skill-desc">
+						<div class="skill-name">thymeleaf</div>
+						<div class="skill-desc-more">
+							- thymeleaf 태그를 사용하여 동적 페이지를 구현할 수 있습니다
+						</div>
+						<div class="skill-desc-more">
+							- th:if, th:each 등 thymeleaf의 조건문, 반복문을 사용할 수 있습니다
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="skill-cate">
+			<div class="helper"></div>
+			<div class="skill-cate-name">협업</div>
+			<div class="skill-objects">
+				<div class="skill-object">
+					<div class="skill-icon"><img src="./asset/skill-icon-github.png"></div>
+					<div class="skill-desc">
+						<div class="skill-name">Github</div>
+						<div class="skill-desc-more">
+							- Git으로 프로젝트를 관리할 수 있습니다
+						</div>
+						<div class="skill-desc-more">
+							- fork, branch, pull request를 통해<br>새로운/기존의 repository의 개발에 참여할 수 있습니다
+						</div>
+					</div>
+				</div>
+				<div class="skill-object" style="visibility: hidden;"></div>
+			</div>
+		</div>
+			
 
 	</div>
-	
+
+	<a name="project"></a>
+	<div class="project">
+		
+	</div>
+
+	<a name="contact"></a>
+
+
+
+	</div>
+	<div>
+		<a href="https://www.flaticon.com/free-icons/telephone" title="telephone icons">Telephone icons created by Freepik - Flaticon</a>
+	</div>
 </body>
 
 </html>
